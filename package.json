@@ -1,0 +1,30 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "webApp",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve  --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "ddd"
+  ],
+  "author": "huilo",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "node-sass": "^6.0.1",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "webpack-serve": "^4.0.0"
+  }
+}

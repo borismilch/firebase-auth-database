@@ -1,0 +1,106 @@
+
+/**
+ * Body CSS
+ */
+
+ html,
+ body {
+   height: 100%;
+ }
+ 
+ html,
+ body,
+ input,
+ textarea,
+ button {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+ }
+ 
+ 
+ /**
+  * Sidebar CSS
+  */
+ 
+ #sidebar {
+   background-color: #E57373;
+   padding: 15px;
+ }
+ 
+ @media (min-width: 768px) {
+   #sidebar {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     width: 180px;
+     height: 100%;
+     padding-top: 30px;
+   }
+ }
+ 
+ 
+ /**
+  * Content CSS
+  */
+ @media (min-width: 768px) {
+   #content {
+     margin-left: 180px;
+   }
+ }
+
+ #sidebar{
+     background-color: #1565C0;
+ }
+ .aside__btn{
+   position: fixed !important;
+   bottom: 40px;
+   right: 50px;
+ font-size: 30px !important;  
+ }
+ .modal{
+   max-width: 600px;
+   padding: 1rem;
+   max-height: 400px;
+   background-color: #fff;
+   margin: 100px auto;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   &::-webkit-scrollbar{
+     width: 10px;
+     border-radius: 15px;
+     height: 20px;
+     
+   }
+  
+   &::-webkit-scrollbar-thumb{
+    background-color: #d1d1d1;
+   border-radius: 15px;
+   
+   }
+ 
+   &::-webkit-scrollbar-button{
+    display: none;
+   }
+   & h4{
+     text-align: center;
+   }
+   &__content{
+    
+   }
+ }
+
+ #auth-submit{
+   &:disabled{
+     opacity: 0.4;
+   }
+ }
+ .quests-list__item{
+   margin: 4px 0px;
+   font-size: 18px;
+   font-weight: 400;
+   &::first-letter{
+    text-transform: uppercase;
+   
+   }
+ }
